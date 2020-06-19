@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RecordatorioContraseñas
+namespace RecordatorioContraseñas.Vistas
 {
-    public partial class Login : Form
+    public partial class Principal : Form
     {
-        public Login()
+        public Principal()
         {
             InitializeComponent();
         }
