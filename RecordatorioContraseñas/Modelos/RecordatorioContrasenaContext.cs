@@ -22,7 +22,10 @@ namespace RecordatorioContraseñas.Modelos
         {
             if (!optionsBuilder.IsConfigured)
             {
+<<<<<<< HEAD
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+=======
+>>>>>>> 0f6e00568be5effe1d556f5196c0d9b6ffaacd02
                 optionsBuilder.UseSqlServer("Data Source=DESKTOP-AIH501O;Initial Catalog=RecordatorioContrasena;Integrated Security=True");
             }
         }
@@ -43,12 +46,15 @@ namespace RecordatorioContraseñas.Modelos
                     .HasMaxLength(20)
                     .IsUnicode(false);
 
+<<<<<<< HEAD
                 entity.Property(e => e.Nombre)
                     .IsRequired()
                     .HasColumnName("nombre")
                     .HasMaxLength(20)
                     .IsUnicode(false);
 
+=======
+>>>>>>> 0f6e00568be5effe1d556f5196c0d9b6ffaacd02
                 entity.Property(e => e.FechaModificacion)
                     .HasColumnName("fechaModificacion")
                     .HasColumnType("date");
