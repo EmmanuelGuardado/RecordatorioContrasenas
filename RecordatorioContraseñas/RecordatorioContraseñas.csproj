@@ -141,6 +141,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\20200630035630_CampoNombre_TablaCuentas.cs" />
+    <Compile Include="Migrations\20200630035630_CampoNombre_TablaCuentas.designer.cs">
+      <DependentUpon>20200630035630_CampoNombre_TablaCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\RecordatorioContrasenaContextModelSnapshot.cs" />
     <Compile Include="Vistas\Login.cs">
       <SubType>Form</SubType>
     </Compile>

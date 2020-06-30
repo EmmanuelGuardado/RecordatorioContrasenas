@@ -43,6 +43,12 @@ namespace RecordatorioContraseñas.Modelos
                     .HasMaxLength(20)
                     .IsUnicode(false);
 
+                entity.Property(e => e.Nombre)
+                    .IsRequired()
+                    .HasColumnName("nombre")
+                    .HasMaxLength(20)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.FechaModificacion)
                     .HasColumnName("fechaModificacion")
                     .HasColumnType("date");

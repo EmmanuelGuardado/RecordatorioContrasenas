@@ -62,6 +62,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(173, 26);
             this.txtUsuario.TabIndex = 1;
+            this.txtUsuario.Text = "Emmanuel Guardado";
             // 
             // txtContrasena
             // 
@@ -70,7 +71,8 @@
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.PasswordChar = '*';
             this.txtContrasena.Size = new System.Drawing.Size(173, 26);
-            this.txtContrasena.TabIndex = 1;
+            this.txtContrasena.TabIndex = 2;
+            this.txtContrasena.Text = "emmanuel2010";
             // 
             // btnIngresar
             // 
@@ -78,7 +80,7 @@
             this.btnIngresar.Location = new System.Drawing.Point(126, 135);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(173, 31);
-            this.btnIngresar.TabIndex = 2;
+            this.btnIngresar.TabIndex = 3;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
@@ -98,6 +100,7 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Iniciar Seción";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

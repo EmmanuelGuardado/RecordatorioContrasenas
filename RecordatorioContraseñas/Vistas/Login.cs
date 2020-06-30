@@ -1,4 +1,5 @@
 ﻿using RecordatorioContraseñas.Modelos;
+using RecordatorioContraseñas.Vistas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,17 +27,27 @@ namespace RecordatorioContraseñas
                               where u.Usuario == txtUsuario.Text && u.Contrasena == txtContrasena.Text
                               select u;
 
+                var usuario = lstusuario.FirstOrDefault();
+
+
                 if (lstusuario.Count() > 0)
                 {
                     MessageBox.Show("Bienvenido " + txtUsuario.Text);
                     this.Hide();
 
+                    Principal FormPrincipal = new Principal(usuario);
+                    FormPrincipal.Show();
                 }
                 else
                 {
                     MessageBox.Show("Usuario y/o Contraseña incorrectos","E R R O R",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 }
             } 
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
